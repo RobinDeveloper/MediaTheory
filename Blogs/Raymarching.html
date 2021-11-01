@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<!--
+		Basic
+	-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<title>Raymarching</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="vcard, resposnive, resume, personal, card, cv, cards, portfolio" />
+	<meta name="author" content="beshleyua" />
+	
+	<!--
+		Load Fonts
+	-->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+
+	<!--
+		Load CSS
+	-->
+	<link rel="stylesheet" id="colorBasic" />
+	<link rel="stylesheet" id="colorBlogs" />
+	<link rel="stylesheet" id="colorIon" />
+	<link rel="stylesheet" id="colorPopup" />
+	<link rel="stylesheet" id="colorAnimate" />
+	<link rel="stylesheet" id="colorLayout" />
+	
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!--
+		Favicons
+	-->
+	<link rel="shortcut icon" href="../images/favicons/favicon.ico">
+	
+</head>
+
+<body>	
+	<div class="page">
+		
+		<!-- preloader -->
+		<div class="preloader">
+			<div class="centrize full-width">
+				<div class="vertical-center">
+					<div class="spinner">
+						<div class="double-bounce1"></div>
+						<div class="double-bounce2"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- background -->
+		<div class="background"></div>
+
+		<!--
+			Container
+		-->
+		<div class="container opened" data-animation-in="fadeInLeft" data-animation-out="fadeOutLeft">
+
+			<!--
+				Header
+			-->
+			<header class="header">
+
+				<!-- menu -->
+				<div class="top-menu">
+					<ul>
+						<li>
+							<a href="../index.html">
+								<span class="icon ion-home"></span>
+								<span class="link">Home</span>
+							</a>
+						</li>
+						<li class="active">
+							<a href="blog-post.html">
+								<span class="icon ion-chatbox-working"></span>
+								<span class="link">Blog</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+			</header>
+
+			<!--
+				Card - Started
+			-->
+			<div class="card-started">
+
+				<!--
+					Profile
+				-->
+				<div class="profile">
+
+					<!-- profile image -->
+					<div class="slide" style="background-image: url(../images/IMAGES/Background/hello.jpg);"></div>
+
+					<!-- profile photo -->
+					<div class="image">
+						<img src="../images/IMAGES/Robin.png" alt="" />
+					</div>
+
+					<!-- profile titles -->
+					<div class="title">Robin Opheij</div>
+					<div class="subtitle">Game Developer</div>
+
+					<!-- profile socials -->
+					<div class="social">
+						<a target="_blank" href="https://StackOverflow.com/RobinDeveloper"><span class="fab fa-stack-overflow"></span></a>
+						<a target="_blank" href="https://twitter.com/DeveloperRobin"><span class="fab fa-twitter"></span></a>
+						<a target="_blank" href="https://github.com/RobinDeveloper"><span class="fab fa-github"></span></a>
+						<a target="_blank" href="mailto:robin@developerrobin.nl"><span class="fab fa-mail"></span></a>
+						<a target="_blank" href="tel:+31623736486"><span class="fas fa-phone"></span></a>
+					</div>
+					
+					<!-- profile buttons -->
+					<div class="lnks">
+						<a href="" class="lnk">
+							<span class="text">Download CV</span>
+							<span class="ion ion-archive"></span>
+						</a>
+						<a href="../index.html" class="lnk discover active">
+							<span class="text">Back to home</span>
+							<span class="arrow"></span>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!--
+				Card - Blog
+			-->
+			<div class="card-inner blog blog-post animated" id="blog-card">
+				<div class="card-wrap">
+
+					<!--
+						Blog Single
+					-->
+					<div class="content blog-single">
+
+						<!-- title -->
+						<div class="title">Blog Post</div>
+
+						<!-- content -->
+						<div class="row border-line-v">
+							<div class="col col-m-12 col-t-12 col-d-12">
+								<div class="post-box">
+									
+									<!-- blog detail -->
+									<h1>Raymarching</h1>						
+									<div class="blog-detail">1st Febuary, 2019 Robin Opheij</div>
+									
+									<!-- blog image -->
+									<div class="blog-image">
+										<img src="../images/IMAGES/Blogs/Raymarching/Raymarching.png" alt="" />
+									</div>  
+									
+									<!-- blog content -->
+									<div class="blog-content">
+										<p><a href="../downloads/Raymarching.pdf"> Raymarch PDF Download</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--
+		jQuery Scripts
+	-->
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/jquery.validate.js"></script>
+	<script src="../js/jquery.magnific-popup.js"></script>
+	<script src="../js/imagesloaded.pkgd.js"></script>
+	<script src="../js/masonry.pkgd.js"></script>
+	<script src="../js/masonry-filter.js"></script>
+	<script src="../js/jquery.slimscroll.js"></script>
+	
+	<!--
+		Google map api
+	-->
+	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	
+	<!--
+		Main Scripts
+	-->
+	<script src="../js/scripts.js"></script>
+	<script src="../js/ColorBlog.js"></script>
+	
+</body>
+</html>

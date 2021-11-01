@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<!--
+		Basic
+	-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<title>Blog</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="vcard, resposnive, resume, personal, card, cv, cards, portfolio" />
+	<meta name="author" content="beshleyua" />
+	
+	<!--
+		Load Fonts
+	-->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+
+	<!--
+		Load CSS
+	-->
+	<link rel="stylesheet" id="colorBasic" />
+	<link rel="stylesheet" id="colorBlogs" />
+	<link rel="stylesheet" id="colorIon" />
+	<link rel="stylesheet" id="colorPopup" />
+	<link rel="stylesheet" id="colorAnimate" />
+	<link rel="stylesheet" id="colorLayout" />
+	
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!--
+		Favicons
+	-->
+	<link rel="shortcut icon" href="../images/favicons/favicon.ico">
+	
+</head>
+
+<body>	
+	<div class="page">
+		
+		<!-- preloader -->
+		<div class="preloader">
+			<div class="centrize full-width">
+				<div class="vertical-center">
+					<div class="spinner">
+						<div class="double-bounce1"></div>
+						<div class="double-bounce2"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- background -->
+		<div class="background"></div>
+
+		<!--
+			Container
+		-->
+		<div class="container opened" data-animation-in="fadeInLeft" data-animation-out="fadeOutLeft">
+
+			<!--
+				Header
+			-->
+			<header class="header">
+
+				<!-- menu -->
+				<div class="top-menu">
+					<ul>
+						<li>
+							<a href="../index.html">
+								<span class="icon ion-home"></span>
+								<span class="link">Home</span>
+							</a>
+						</li>
+						<li class="active">
+							<a href="blog-post.html">
+								<span class="icon ion-chatbox-working"></span>
+								<span class="link">Blog</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+			</header>
+
+			<!--
+				Card - Started
+			-->
+			<div class="card-started">
+
+				<!--
+					Profile
+				-->
+				<div class="profile">
+
+					<!-- profile image -->
+					<div class="slide" style="background-image: url(../images/IMAGES/Background/hello.jpg);"></div>
+
+					<!-- profile photo -->
+					<div class="image">
+						<img src="../images/IMAGES/Robin.png" alt="" />
+					</div>
+
+					<!-- profile titles -->
+					<div class="title">Robin Opheij</div>
+					<div class="subtitle">(Game) programmer</div>
+
+					<!-- profile socials -->
+					<div class="social">
+						<a target="_blank" href="https://StackOverflow.com/RobinDeveloper"><span class="fab fa-stack-overflow"></span></a>
+						<a target="_blank" href="https://twitter.com/DeveloperRobin"><span class="fab fa-twitter"></span></a>
+						<a target="_blank" href="https://github.com/RobinDeveloper"><span class="fab fa-github"></span></a>
+						<a target="_blank" href="mailto:robin@developerrobin.nl"><span class="fab fa-mail"></span></a>
+						<a target="_blank" href="tel:+31623736486"><span class="fas fa-phone"></span></a>
+					</div>
+					
+					<!-- profile buttons -->
+					<div class="lnks">
+						<a href="" class="lnk">
+							<span class="text">Download CV</span>
+							<span class="ion ion-archive"></span>
+						</a>
+						<a href="../index.html" class="lnk discover active">
+							<span class="text">Back to home</span>
+							<span class="arrow"></span>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!--
+				Card - Blog
+			-->
+			<div class="card-inner blog blog-post animated" id="blog-card">
+				<div class="card-wrap">
+
+					<!--
+						Blog Single
+					-->
+					<div class="content blog-single">
+
+						<!-- title -->
+						<div class="title">Blog Post</div>
+
+						<!-- content -->
+						<div class="row border-line-v">
+							<div class="col col-m-12 col-t-12 col-d-12">
+								<div class="post-box">
+									
+									<!-- blog detail -->
+									<h1>Writing your first shader</h1>						
+									<div class="blog-detail">December 21, 2017, Robin Opheij</div>
+									
+									<!-- blog image -->
+									<div class="blog-image">
+										<img src="../images/IMAGES/Blogs/Your First Shader/ShaderResult.jpg" alt="" />
+									</div>  
+									
+									<!-- blog content -->
+									<div class="blog-content">
+										<p>
+											In this tutorial I will go over how to setup a basic shader whilst explaining everything in the progress.
+										</p>
+										<h5>prerequisite</h5>
+										<p>
+											Most unity developers know that unity works with a component system, so does the rendering system.
+											Unity had multiple rendering components depending on what type of object you want to render.
+											in our example we are using the meshrenderer.
+										</p>
+										<p>
+											Every object only uses one renderer but a renderer can have as many materials
+											that it needs and every material can have its own shader.
+										</p>
+										<div class="blog-image">
+											<img src="../images/IMAGES/Blogs/Your First Shader/Flowchart.jpg" alt="" />
+										</div>
+										<h5>Creating the shader file</h5>
+										<p>
+											I think it's good practice to have a shader folder for all my shaders so create one first.
+											(I'm going to assume that you know how to make a folder).
+										</p>
+										<p>
+											Once you made the shader folder, open it and go to the create menu.
+										</p>
+										<div class="blog-image">
+												<img src="../images/IMAGES/Blogs/Your First Shader/CreateMenu.jpg" alt="" />
+										</div>
+										<p>
+												Now hover over shader and you'll see:
+										</p>
+										<div class="blog-image">
+												<img src="../images/IMAGES/Blogs/Your First Shader/ShaderTypes.jpg" alt="" />
+										</div>
+										<p>
+												which one do I choose?" you might ask. and for now that doesn't really matter since we are going to delete it all the code in the shader so I can explain
+												it from the ground up.
+
+												it's like a unlit shader so you might aswell create that.
+
+												After you have created the file you can open it with your prefered IDE, I use visual studio but it doesn't really matter.
+										</p>
+										<h5>
+												The shader
+										</h5>
+										<p>
+												Now that you have created and opened the shader you can go ahead and delete all the code in it, So we can rewrite it from scratch.
+
+												First we give it the outer layer, with the (sub)folder and name
+										</p>
+										<script src="https://gist.github.com/RobinDeveloper/74e9fb2e0c35775ae1b04993750e02eb.js"></script>
+										<p>
+												between the "" we say Custom which is under what subfolder the shader can be found in the materials shader dropdown menu,
+												 and the name will be whatever you name the part after the last /. this does mean that you can have as many subfolders as you want.
+
+												Let's make the properties tab, The properties tab is basicly the place where we define our "public" variables,
+												 we see these in our materials inspector and the names of these variables are what we call if we want to access them in a script.
+										</p>
+										<script src="https://gist.github.com/RobinDeveloper/16f937c1b475486f886b66ebb252cfbe.js"></script>
+										<p>
+												As you can see here inside the properties tab we defined a few things. lets go over them;
+												in this example _Color is the variable name ("Color") is how it will be shown in the inspector
+												 and (, Color) is the value type.
+												We then defined the default for the shader which in this case is (1,1,1,1)
+
+												After we defined our properties we move on to create the subshaders and passes. You can have multiple
+												 subshaders and passes but for now we'll just create one.
+										</p>
+										<script src="https://gist.github.com/RobinDeveloper/ceb6bbe4e8906ca94b67310393739260.js"></script>
+										<p>
+												Everything outside of the pass {} is part of the shaderlab which sends the cg data from withing the pass{}
+												 over to unity's rendering system.
+
+												Inside the pass we are first going to tell the shader how the vertex and fragment functions are going to be called.
+										</p>
+										<script src="https://gist.github.com/RobinDeveloper/ae5a3477e059a438f9565335339ecdf2.js"></script>
+										<p>
+											One of the predefined structs in UnityCG.cginc.
+										</p>
+										<script src="https://gist.github.com/RobinDeveloper/cc050ac0c5ad3297fe9b1acebf98bd34.js"></script>
+										<p>
+												float4 = type of variable, vertex = variable name, POSITION = data needs to be pulled.
+
+												The next struct we make is the vertex to fragment struct.
+										</p>
+										<script src="https://gist.github.com/RobinDeveloper/b85eae6f6823953bd42531f1f9853ccc.js"></script>
+										<p>
+												and now the vertex fucntion
+										</p>
+										<script src="https://gist.github.com/RobinDeveloper/eff02ba44f1c799ae1e5214134c54547.js"></script>
+										<p>
+												UNITY_MATRIX_MVP = the current modelview projection, I wouldn't worry too much about it.
+
+												Next we define our properties in the cg part of the shader. they should have the same name as the names you gave
+												 them in properties.
+												Let's create our colour and Texture.
+										</p>
+										<script src="https://gist.github.com/RobinDeveloper/138af7d79d78191e969dcc0acd26a666.js"></script>
+										<p>
+												let's go and make the fragment fucntion which sends the final data to the renderer.
+										</p>
+										<script src="https://gist.github.com/RobinDeveloper/8f28eaeb50d1368e1a5fef70d1695d41.js"></script>
+										<p>
+												tex2D is a UnityCG.cginc function other UnityCG.cginc functions can be found here. link
+
+												Let's now finish the shader with writting down ENDCG.
+										</p>
+										<h5>Conlcusion</h5>
+										<p>
+												Your shader should look something like this.
+										</p>
+										<div class="blog-image">
+												<img src="../images/IMAGES/Blogs/Your First Shader/FullShader.jpg" alt="" />
+										</div>
+										<p>
+												Now create a object in your scene and a materials in you prefered assets folder.
+
+												On the materials go to the dropdown where is says standard anc choose Custom/
+												 MyFirstShader select it, and there you go assign the material to the object in the scene and watch the result.
+										</p>
+										<div class="blog-image">
+												<img src="../images/IMAGES/Blogs/Your First Shader/ShaderDropDown.jpg" alt="" />
+										</div>
+										<h3>
+												And thats that your first shader.
+										</h3>
+										<div class="blog-image">
+												<img src="../images/IMAGES/Blogs/Your First Shader/ShaderResult.jpg" alt="" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--
+		jQuery Scripts
+	-->
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/jquery.validate.js"></script>
+	<script src="../js/jquery.magnific-popup.js"></script>
+	<script src="../js/imagesloaded.pkgd.js"></script>
+	<script src="../js/masonry.pkgd.js"></script>
+	<script src="../js/masonry-filter.js"></script>
+	<script src="../js/jquery.slimscroll.js"></script>
+	
+	<!--
+		Google map api
+	-->
+	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	
+	<!--
+		Main Scripts
+	-->
+	<script src="../js/scripts.js"></script>
+	<script src="../js/ColorBlog.js"></script>
+	
+</body>
+</html>

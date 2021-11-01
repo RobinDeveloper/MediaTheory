@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<!--
+		Basic
+	-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<title>Blog</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="vcard, resposnive, resume, personal, card, cv, cards, portfolio" />
+	<meta name="author" content="beshleyua" />
+	
+	<!--
+		Load Fonts
+	-->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+
+	<!--
+		Load CSS
+	-->
+	<link rel="stylesheet" id="colorBasic" />
+	<link rel="stylesheet" id="colorBlogs" />
+	<link rel="stylesheet" id="colorIon" />
+	<link rel="stylesheet" id="colorPopup" />
+	<link rel="stylesheet" id="colorAnimate" />
+	<link rel="stylesheet" id="colorLayout" />
+	
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!--
+		Favicons
+	-->
+	<link rel="shortcut icon" href="../images/favicons/favicon.ico">
+	
+</head>
+
+<body>	
+	<div class="page">
+		
+		<!-- preloader -->
+		<div class="preloader">
+			<div class="centrize full-width">
+				<div class="vertical-center">
+					<div class="spinner">
+						<div class="double-bounce1"></div>
+						<div class="double-bounce2"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- background -->
+		<div class="background"></div>
+
+		<!--
+			Container
+		-->
+		<div class="container opened" data-animation-in="fadeInLeft" data-animation-out="fadeOutLeft">
+
+			<!--
+				Header
+			-->
+			<header class="header">
+
+				<!-- menu -->
+				<div class="top-menu">
+					<ul>
+						<li>
+							<a href="../index.html">
+								<span class="icon ion-home"></span>
+								<span class="link">Home</span>
+							</a>
+						</li>
+						<li class="active">
+							<a href="blog-post.html">
+								<span class="icon ion-chatbox-working"></span>
+								<span class="link">Blog</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+			</header>
+
+			<!--
+				Card - Started
+			-->
+			<div class="card-started">
+
+				<!--
+					Profile
+				-->
+				<div class="profile">
+
+					<!-- profile image -->
+					<div class="slide" style="background-image: url(../images/IMAGES/Background/Kodelifereel.gif);"></div>
+
+					<!-- profile photo -->
+					<div class="image">
+						<img src="../images/IMAGES/Robin.png" alt="" />
+					</div>
+
+					<!-- profile titles -->
+					<div class="title">Robin Opheij</div>
+					<div class="subtitle">(Game) programmer</div>
+
+					<!-- profile socials -->
+					<div class="social">
+						<a target="_blank" href="https://StackOverflow.com/RobinDeveloper"><span class="fab fa-stack-overflow"></span></a>
+						<a target="_blank" href="https://twitter.com/DeveloperRobin"><span class="fab fa-twitter"></span></a>
+						<a target="_blank" href="https://github.com/RobinDeveloper"><span class="fab fa-github"></span></a>
+						<a target="_blank" href="mailto:robin@developerrobin.nl"><span class="fab fa-mail"></span></a>
+						<a target="_blank" href="tel:+31623736486"><span class="fas fa-phone"></span></a>
+					</div>
+					
+					<!-- profile buttons -->
+					<div class="lnks">
+						<a target="_blank" href="../downloads/Resume.pdf" class="lnk">
+							<span class="text">Download CV</span>
+							<span class="ion ion-archive"></span>
+						</a>
+						<a href="../index.html" class="lnk discover active">
+							<span class="text">Back to home</span>
+							<span class="arrow"></span>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!--
+				Card - Blog
+			-->
+			<div class="card-inner blog blog-post animated" id="blog-card">
+				<div class="card-wrap">
+
+					<!--
+						Blog Single
+					-->
+					<div class="content blog-single">
+
+						<!-- title -->
+						<div class="title">Blog Post</div>
+
+						<!-- content -->
+						<div class="row border-line-v">
+							<div class="col col-m-12 col-t-12 col-d-12">
+								<div class="post-box">
+									
+									<!-- blog detail -->
+									<h1>My machine learning journey</h1>
+									<div class="blog-detail">December 21, 2017, Robin Opheij</div>
+									
+									<!-- blog image -->
+									<div class="blog-image">
+										<img src="../images/IMAGES/Blogs/Machine%20Learning%20Journey/node.png" alt="" />
+									</div>  
+									
+									<!-- blog content -->
+									<div class="blog-content">
+										<p>
+											When I started this year I had a clear goal in mind. <br>
+											Get myself acquainted with machine learning and genetic algorithms. I already had done some small stuff with machine learning in processing and java.
+											But I really wanted to step it up and create a scene of agents that flock together (in space) and potentially even have full on space battles.
+											<br>
+											The last part might be a bit over the top for my first algorithm but I should be able to get atleast the flocking done.<br>
+										</p>
+
+										<p>
+											I wanted to set a few rules for the boids that they should know overtime.
+										</p>
+										<blockquote>
+											<ul>
+												<li>Don't fly into eachother.</li>
+												<li>Stay close to eachother.</li>
+												<li>Folow a target or the first boid of the flock.<br> first boid should know to just fly anywhere it wants.</li>
+											</ul>
+										</blockquote>
+										<p>
+											So where do I start? because there is no way my first neural network project can be 3D flocking boids.<br>
+											I started to look around and ended up with Text color on solid color test. I made a quick node diagram and the calculations I needed to make
+											the neural network work.<br>
+											That node diagram looks something like this but with RGB as inputs and Black Or White as output. The one I am going to show was the first pass for the flocking behaviour.
+											I am now working on a new and improved version of this diagram.
+										</p>
+										<div class="blog-image">
+												<img src="../images/IMAGES/Blogs/Machine%20Learning%20Journey/NodeDesign.png" alt="" />
+										</div>
+										<p>
+											I quickly got stuck though and started working on a new Idea. <br>
+											a genetic algorithm without hidden layers. I now started making a cameleon simulator.<br>
+											every agent will overtime learn to adapt to it's environment by checking the magnitude between their color and the environment by then making children who pick random genes from it parents.
+											the only parents that are allowed to "breed" are the top 50% of the agents from the last generation. <br>
+											the top 50% gets decided form what their fitness is which I calculate trough the magnitude as I said above.
+										</p>
+										<script src="https://gist.github.com/RobinDeveloper/b78050daf7583661387abb9b8cd19b2c.js"></script>
+										<div class="blog-image">
+											<img src="../images/IMAGES/PortfolioItems/Machine%20Learning/Kameleon/kameleon.gif" alt="" />
+										</div>
+										<p>
+											Once I got this figured out I tried using this system for the boids and by giving them a move to position to a target but I decided to drop it to dive deeper into writing a real
+											real neural network where I can then put some variables in as input and use the output in the the algorithm.
+					1						in this neural network I use the feed forward technique:
+										</p>
+										<script src="https://gist.github.com/RobinDeveloper/d87b405d8a2f29b0c43eb2f5b49225f5.js"></script>
+										<p>
+											In the end I realized how easy the part of writing the neural network actually is and that the real hard part is writing the algorithm which you train upon.
+											I am aware that I only so far have written Deep Neural Networks with genetic algorithm and that those are a lot easier to write and understand than for instance
+											deep reinforcement learning and I am working on some small c# projects where I experiment with expected results and teaching the neural networks that way.											
+											<br> But back to the 2d flocking. In this project I had a few boids that didn't care about each other and only wanted to fly towards a target by angling them self the right way so they can move towards the target.
+											and now I'm working on this making this work in 3D with all the rules I set above.<br>
+										</p>
+										<p>
+											Whilst I was working on the flocking one of the other kids on my school showed of his genetic car driving. I saw this and completely forgot that pretty much everyone 
+											interested in machine learning in a 3D sense made this genetic algorithm and I went and tried making one. this ended up being way easier than I thought I spend around 2 days on this little project.
+											I did write a new neural network for this one because I thought I could make it more efficient.
+											because before I just ran the input trough the neural network and didn't really set up any biases but now I had the neural network and let all the calculation be done by the genetic manager.
+											this way I could also swap it out for a reinforcement learning model or any other form of deep learning.
+											<br> So in the next gif you see some of the training. the green parts are checkpoints which they have to go trough to have their new target set and adjust their nodes.
+											When one reaches the last checkpoint the training is done and they have done it. I call this a genetic car driving experiment but these cars might aswell be rats trying to find their way trough the maze.
+											but fot this example lets just say they are cars trying to maneuver them self trough some weird london streets.
+										</p>
+										<div class="image">
+											<div class="videoWrapper">
+												<iframe width="560" height="315" src="https://www.youtube.com/embed/dnDdW42vJH4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+											</div>
+											</a>
+										</div>
+										<p>
+											So it's been a while since I updated this post but I have come a far way experimenting with new neural networks and algorithms. I will quickly show you the first neural network I wrote
+											and then move on to how I make my neural nets now. You can also read my blog post about how to write a neural network and then use it for a programm in unity c# 
+											if you don't even know how and where to start like me in the beginning. luckly this all isn't too hard.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--
+		jQuery Scripts
+	-->
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/jquery.validate.js"></script>
+	<script src="../js/jquery.magnific-popup.js"></script>
+	<script src="../js/imagesloaded.pkgd.js"></script>
+	<script src="../js/masonry.pkgd.js"></script>
+	<script src="../js/masonry-filter.js"></script>
+	<script src="../js/jquery.slimscroll.js"></script>
+	
+	<!--
+		Google map api
+	-->
+	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	
+	<!--
+		Main Scripts
+	-->
+	<script src="../js/scripts.js"></script>
+	<script src="../js/ColorBlog.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<!--
+		Basic
+	-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<title>Blog</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="vcard, resposnive, resume, personal, card, cv, cards, portfolio" />
+	<meta name="author" content="beshleyua" />
+	
+	<!--
+		Load Fonts
+	-->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+
+	<!--
+		Load CSS
+	-->
+	<link rel="stylesheet" id="colorBasic" />
+	<link rel="stylesheet" id="colorBlogs" />
+	<link rel="stylesheet" id="colorIon" />
+	<link rel="stylesheet" id="colorPopup" />
+	<link rel="stylesheet" id="colorAnimate" />
+	<link rel="stylesheet" id="colorLayout" />
+	
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!--
+		Favicons
+	-->
+	<link rel="shortcut icon" href="../images/favicons/favicon.ico">
+	
+</head>
+
+<body>	
+	<div class="page">
+		
+		<!-- preloader -->
+		<div class="preloader">
+			<div class="centrize full-width">
+				<div class="vertical-center">
+					<div class="spinner">
+						<div class="double-bounce1"></div>
+						<div class="double-bounce2"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- background -->
+		<div class="background"></div>
+
+		<!--
+			Container
+		-->
+		<div class="container opened" data-animation-in="fadeInLeft" data-animation-out="fadeOutLeft">
+
+			<!--
+				Header
+			-->
+			<header class="header">
+
+				<!-- menu -->
+				<div class="top-menu">
+					<ul>
+						<li>
+							<a href="../index.html">
+								<span class="icon ion-home"></span>
+								<span class="link">Home</span>
+							</a>
+						</li>
+						<li class="active">
+							<a href="blog-post.html">
+								<span class="icon ion-chatbox-working"></span>
+								<span class="link">Blog</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+			</header>
+
+			<!--
+				Card - Started
+			-->
+			<div class="card-started">
+
+				<!--
+					Profile
+				-->
+				<div class="profile">
+
+					<!-- profile image -->
+					<div class="slide" style="background-image: url(../images/IMAGES/Background/hello.jpg);"></div>
+
+					<!-- profile photo -->
+					<div class="image">
+						<img src="../images/IMAGES/Robin.png" alt="" />
+					</div>
+
+					<!-- profile titles -->
+					<div class="title">Robin Opheij</div>
+					<div class="subtitle">(Game) programmer</div>
+
+					<!-- profile socials -->
+					<div class="social">
+						<a target="_blank" href="https://StackOverflow.com/RobinDeveloper"><span class="fab fa-stack-overflow"></span></a>
+						<a target="_blank" href="https://twitter.com/DeveloperRobin"><span class="fab fa-twitter"></span></a>
+						<a target="_blank" href="https://github.com/RobinDeveloper"><span class="fab fa-github"></span></a>
+						<a target="_blank" href="mailto:robin@developerrobin.nl"><span class="fab fa-mail"></span></a>
+						<a target="_blank" href="tel:+31623736486"><span class="fas fa-phone"></span></a>
+					</div>
+					
+					<!-- profile buttons -->
+					<div class="lnks">
+						<a href="" class="lnk">
+							<span class="text">Download CV</span>
+							<span class="ion ion-archive"></span>
+						</a>
+						<a href="../index.html" class="lnk discover active">
+							<span class="text">Back to home</span>
+							<span class="arrow"></span>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!--
+				Card - Blog
+			-->
+			<div class="card-inner blog blog-post animated" id="blog-card">
+				<div class="card-wrap">
+
+					<!--
+						Blog Single
+					-->
+					<div class="content blog-single">
+
+						<!-- title -->
+						<div class="title">Blog Post</div>
+
+						<!-- content -->
+						<div class="row border-line-v">
+							<div class="col col-m-12 col-t-12 col-d-12">
+								<div class="post-box">
+									
+									<!-- blog detail -->
+									<h1>How to write your fist Neural Network</h1>						
+									<div class="blog-detail">November 30, 2018, Robin Opheij</div>
+									
+									<!-- blog image -->
+									<div class="blog-image">
+										<img src="../images/IMAGES/Blogs/FirstNerualNet/Product.png" alt="" />
+									</div>  
+									
+									<!-- blog content -->
+									<div class="blog-content">
+										<p>In this blog we will go over the easiest part of machine learning.</p>
+										<blockquote> 
+											The hello world of machine learning.
+										</blockquote>
+										<div class="blog-image">
+											<img src="../images/IMAGES/PortfolioItems/Machine Learning/HelloWorld/Hellow.png" alt="" />
+										</div> 
+										<p>
+											Right now we are going to write a programm that when we give it a bunch of trainingdata and some new inputs it will give
+											us the correct results.
+										</p>
+										<p>
+											<br> Since I write most of my projects in c# and since c# is a wildly used program I will write this tutorial for c#.
+											It should be pretty	easy to follow even if you are used to different languages. If you still prefer to write this in your main language then please
+											do, I would love to see all the different Implementations of this tutorial. On the git for this tutorial I might even go ahead and add different languages in different branches.				
+										</p>
+										<p>
+											<br> So what it the "hello world" to neural networks. well it's a nn that can compute a XOR function, this idea has it's roots in binary logic and stands for exclusive-or.
+											So basically it finds out if a if statement in binary should return true or false.
+											So if the result of XOR is 1 then one of the inputs is 1(true) and the other is 0(false). If t.hey are both false or true then the result will be 0
+										</p>
+										<div class="blog-image">
+											<img src="../images/IMAGES/PortfolioItems/Machine Learning/HelloWorld/Hellow.png" alt="" />
+										</div>
+										<script src="https://gist.github.com/RobinDeveloper/2ad74437f0e527ca7397e12f34b38e14.js"></script>
+										<p>
+											So now lets get into the hierarchy of the neural network we are going to create.
+										</p>
+										<div class="blog-image">
+											<img src="../images/IMAGES/Blogs/FirstNerualNet/XOR NN.png" alt="" />
+										</div>
+										<p>
+											So now that you know what results we are after I'm going to explain how we are going to do this.
+											We are going be be doing this trough a backpropagation algorithm. This works by first generating results by having random inputs and random outputs. then checking
+											those results trough the expected results and then adjust the weights and biases accordingly and restart that whole process. this process is what we call supervised-learning.
+										</p>
+										<blockquote>
+											So first we "forward propagate" which does that first bit of calculating the output values and then the "back propagation" will adjust the weigths and biases accordingly. 
+										</blockquote>
+										<p>
+											<br> So how and what are we going to do: <br>
+												<ul>
+													<li>
+														1. Initialize all neurons with random values between 0 - 1.
+													</li>
+													<li>
+														2. Calculate the output trought the feedforward
+													</li>
+													<li>
+														3. Calculate the global average error (GAE).
+													</li>
+													<li>
+														4. Adjust the neurons with this GAE.
+													</li>
+													<li>
+														5. Calculate Hidden layer neurons error (GAE split). Then adjust the neurons accordingly.
+													</li>
+													<li>
+														6. repeat this process except for step 1 until the GAE gets minimal.
+													</li>
+												</ul>
+										</p>
+										<p>
+											So every neural network need a "activation function" this is also called a transfer function sometimes. this could be a sigmoid or sine function.
+											However we are going to use a sigmoid function. we adjust this function until it gives us the correct outputs.
+										</p>
+										<div class="blog-image">
+												<img src="../images/IMAGES/Blogs/FirstNerualNet/Sigmoid.gif" alt="" />
+										</div>
+										<p>
+											so we have 2 sigmoid fucntion the normal one: 
+										</p>
+										<div class="blog-image">
+												<img src="../images/IMAGES/Blogs/FirstNerualNet/Sigmoidnon.svg" alt="" />
+										</div>
+										<p>
+											and the derivative: 
+										</p>
+										<div class="blog-image">
+												<img src="../images/IMAGES/Blogs/FirstNerualNet/sigmoidderiv.png" alt="" />
+										</div>
+										<p>
+											So now let's be honest neural networks are actually just tons of math. complex math at that if you don't know what you are looking at.
+											I know that some people aren't like huge math heads so I'll keep this short.<br>
+
+											so I said something about derivative function and normal function which in math looks like f(x) <-- normal, f'(x) <-- derivative.
+											basically f(x) means function of x which is y, but f'(x) means deltax/deltay.
+
+											So let's start with calculating the global error. We do this by: <br>globalOutput = f'(output) * (excpectedOutput - actualOutput)
+
+											as you see we see a few variables here for instance actualOutput. Now how do we calculate that.
+											This isn't too hard so let me quickly show you: <br>actualOutput = f(weights[0] * inputs[0] + weights[1] * inputs[1] + bias).
+										</p>
+										<div class="blog-image">
+												<img src="../images/IMAGES/Blogs/FirstNerualNet/Output.png" alt="" />
+										</div>
+										<p>
+											to adjust the output neuron you just do weight += globalError * inputs and bias is the same except you dont multiply it by the input.
+											<br> To calculate the error of each neuron you just use this formula: <br>error1 = f'(x) * globalError * weight
+											<br> next thing to do is adjusting the hidden layers which is just as easy by just doing <br>weight += error * input; and the bias by <br>bias += error. 
+										</p>
+										<br>
+										<blockquote>
+											So let's finally start coding. 
+										</blockquote>
+										<p>
+											Im just going to write down all the classes from here but if you were able to follow everything you should probably be fine following what I'm doing here.
+											It is not the cleanest code I have ever written but you should be able to follow just fine.
+										</p>
+										<script src="https://gist.github.com/RobinDeveloper/bf5ed4cf2a9b912e5342bb08e552b4b6.js"></script>
+										<script src="https://gist.github.com/RobinDeveloper/5a08e76e65e7dc0544f43bebacb14921.js"></script>
+										<script src="https://gist.github.com/RobinDeveloper/21d18c242838c7c78e271c21735a59ff.js"></script>
+
+										<p>
+											So after all this what will I see?
+										</p>
+										<div class="blog-image">
+												<img src="../images/IMAGES/Blogs/FirstNerualNet/Product.png" alt="" />
+										</div>
+										<p>
+											Yep, that's it. all this work for if statement calculations. oh well see you in the next blog.
+										</p>
+										<a target="_blank" href="https://github.com/RobinDeveloper/XORSHARP.git" class="button">
+											<span class="text">view project</span>
+											<span class="arrow"></span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--
+		jQuery Scripts
+	-->
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/jquery.validate.js"></script>
+	<script src="../js/jquery.magnific-popup.js"></script>
+	<script src="../js/imagesloaded.pkgd.js"></script>
+	<script src="../js/masonry.pkgd.js"></script>
+	<script src="../js/masonry-filter.js"></script>
+	<script src="../js/jquery.slimscroll.js"></script>
+	
+	<!--
+		Google map api
+	-->
+	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	
+	<!--
+		Main Scripts
+	-->
+	<script src="../js/scripts.js"></script>
+	<script src="../js/ColorBlog.js"></script>
+	
+</body>
+</html>
